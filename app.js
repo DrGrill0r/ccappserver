@@ -30,6 +30,8 @@ app.delete("/v1/categories", (req, res) => {
   req.statusCode = 200;
 });
 
-app.listen(80, () => {
- console.log("Server running on port 3000");
+var port = 80;
+
+app.listen(port, () => {
+ console.log("Server running on port ",port);
 });
